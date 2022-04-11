@@ -1,0 +1,12 @@
+.notice-board {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.notices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}

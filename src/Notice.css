@@ -1,0 +1,21 @@
+.dept {
+    padding: 2.5px 5px 2.5px 5px;
+    border-radius: 5px;
+}
+
+.notice-header {
+    color: #3E3F45;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.notice-date {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.date-dept {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

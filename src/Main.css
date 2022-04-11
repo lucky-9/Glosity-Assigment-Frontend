@@ -1,0 +1,18 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    background-color: #F2F3F7;
+    padding: 1rem 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}

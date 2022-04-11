@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import Main from './Main';
+import SideBar from './SideBar';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const theme = createTheme({
+  components: {
+    MuiCalendarPicker: {
+      root: {
+        selectColor: "#000",
+      }
+    },
+    MuiPickersCalendarHeader: {
+      root: {
+        backgroundColor: '#000',
+        color: "white",
+      },
+    },
+  },
+  palette: {
+    primary: {
+      light: '#f35da1',
+      main: '#F1358A',
+      dark: '#a82560',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#44e1b2',
+      main: '#16DA9F',
+      dark: '#0f986f',
+      contrastText: '#fff',
+    },
+    accent: {
+      light: '#5184a6',
+      main: '#74BDEE',
+      dark: '#8fcaf1',
+      contrastText: '#fff',
+    }
+  }
+})
 
-export default App;
+const App = () => (
+  
+    <ThemeProvider theme={theme}>
+      <div className="App">
+      {/* Side bar*/}
+      {/* Main content*/}
+      <SideBar />
+      <Main />
+    </div>
+    </ThemeProvider>
+
+);
+
+
+export default App; 
